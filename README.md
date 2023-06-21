@@ -1,2 +1,2 @@
-# DermaDialogue
+# DermaDialogues
 Software Engineering Project
