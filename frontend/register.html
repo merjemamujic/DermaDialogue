@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> DermaDialogue Registration</title>
+	<link href="css/style1.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,400;0,500;1,300&display=swap"
+		rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+	<div class="content">
+		<div class="container">
+			<img class="bg-img" src="img/skin-care-cosmetology-products.jpg" alt="">
+			<div class="menu">
+				<a href="#connexion" class="btn-connexion active">
+					<h2>Registration</h2>
+				</a>
+			</div>
+			<div class="connexion">
+				<div class="contact-form">
+					<label>First Name</label>
+					<input id="firstNameInput" placeholder="Enter username" type="text">
+					<span id="firstNameError" class="error"></span>
+
+					<label>Last Name</label>
+					<input id="lastNameInput" placeholder="Last Name" type="text">
+					<span id="lastNameError" class="error"></span>
+
+					<label>E-mail</label>
+					<input id="emailInput" placeholder="Enter your e-mail" type="email">
+					<span id="emailError" class="error"></span>
+
+					<label>Password</label>
+					<input id="passwordInput" placeholder="Enter your password" type="password">
+					<span id="passwordError" class="error"></span>
+
+					<br />
+					<input id="registerButton" value="Register" class="submit" type="submit">
+				</div>
+				<div>
+					<h3>Already have an account?</h3>
+					<a href="login.html">
+						<input class="submit" value="Login" type="submit">
+					</a>
+				</div>
+				<hr>
+			</div>
+		</div>
+	</div>
+	<script src="js/sheet.js"></script>
+	<script src="ajax/userAuth/register.js"></script>
+	<script src="ajax/userAuth/registerValidation.js"></script>
+</body>
+
+</html>

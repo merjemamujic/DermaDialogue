@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Blog Post</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Skincare Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Add Blog Post</h2>
+        <form id="addPostForm">
+            <div class="form-group">
+                <label for="blogName">Blog Name:</label>
+                <input type="text" class="form-control" id="blogName" placeholder="Enter blog name" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea class="form-control" id="description" placeholder="Enter description" rows="4"
+                    required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="type">Type:</label>
+                <input type="text" class="form-control" id="type" placeholder="Enter type" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Post</button>
+            <a href="blogdashboard.html">
+                <button class="btn btn-secondary" onclick="history.back()">Cancel</button>
+            </a>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="ajax/addSkinCare/addSkinCare.js"></script>
+
+</body>
+
+</html>

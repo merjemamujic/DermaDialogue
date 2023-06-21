@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> DermaDialogue Login</title>
+
+	<link href="css/style1.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,400;0,500;1,300&display=swap"
+		rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+	<div class="content">
+		<div class="container">
+			<img class="bg-img" src="img/natural-cosmetics-concept-with-copy-space(1).jpg" alt="">
+			<div class="menu">
+				<a href="#connexion" class="btn-connexion active">
+					<h2>Login</h2>
+				</a>
+			</div>
+			<div class="connexion">
+				<div class="contact-form">
+					<div id="errorMessage" class="error-message" style="color: black;"></div>
+					<label>Email</label>
+					<input id="emailInput" placeholder="Enter your email" type="text">
+					<label>Password</label>
+					<input id="passwordInput" placeholder="Enter your password" type="password">
+					<br>
+					<input id="loginButton" class="submit" value="LOGIN" type="submit">
+				</div>
+				<div>
+					<h1>Don't have an account yet?</h1>
+					<a href="register.html">
+						<br />
+						<br />
+						<input class="submit" value="Register" type="submit">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/sheet.js"></script>
+	<script src="ajax/userAuth/login.js"></script>
+	<script src="ajax/userAuth/loginValidation.js"></script>
+</body>
+
+</html>
