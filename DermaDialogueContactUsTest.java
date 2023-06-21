@@ -47,7 +47,7 @@ class DermaDialogueContactUsTest {
 		webDriver.findElement(By.id("/html/body/div[2]/div/div/a")).click();
 		Thread.sleep(2000);
 		
-		// now register
+		// contact form:
 		webDriver.findElement(By.id("firstName")).sendKeys("contact");
 		Thread.sleep(3000);
 		webDriver.findElement(By.id("lastName")).sendKeys("is contacting");
