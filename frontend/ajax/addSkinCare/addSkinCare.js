@@ -18,7 +18,7 @@ $(document).ready(function () {
         // Send AJAX request
         $.ajax({
             type: 'POST',
-            url: 'http://localhost/skincare/backend/add_post', // Update the URL based on your server setup
+            url: 'https://phpbackend-ec7827cfac3d.herokuapp.com/add_post', // Update the URL based on your server setup
             data: data,
             success: function (response) {
                 // Handle success response

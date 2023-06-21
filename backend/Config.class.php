@@ -8,10 +8,10 @@ class Config
     private function __construct() 
     {
         try {
-            $dbHost = '127.0.0.1';
-            $dbName = 'skin_care';
-            $dbUser = 'root';
-            $dbPassword = 'mema2508';
+            $dbHost = 'sql.freedb.tech';
+            $dbName = 'freedb_skin_care';
+            $dbUser = 'freedb_ajla_merjema';
+            $dbPassword = 'XPgW$bAs5S5A4&6';
 
             $this->connection = new PDO("mysql:host=$dbHost;
             dbname=$dbName", $dbUser, $dbPassword);

@@ -20,7 +20,7 @@ var LoginModule = (function () {
 
         var loginUser = function (user) {
             $.ajax({
-                url: "http://localhost/skincare/backend/login",
+                url: "https://phpbackend-ec7827cfac3d.herokuapp.com/login",
                 type: "POST",
                 data: user,
                 success: function (response) {

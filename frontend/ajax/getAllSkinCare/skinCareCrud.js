@@ -41,7 +41,7 @@ $(document).ready(function () {
         if (confirmation) {
             $.ajax({
                 type: 'DELETE',
-                url: 'http://localhost/skincare/backend/delete_post/' + postId,
+                url: 'https://phpbackend-ec7827cfac3d.herokuapp.com/delete_post/' + postId,
                 success: function (response) {
                     // Reload the posts after successful deletion
                     window.location.reload();
@@ -76,7 +76,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'PUT',
-            url: 'http://localhost/skincare/backend/edit_post/' + postId,
+            url: 'https://phpbackend-ec7827cfac3d.herokuapp.com/edit_post/' + postId,
             data: JSON.stringify(postData),
             success: function () {
                 // Hide the modal
@@ -96,7 +96,7 @@ $(document).ready(function () {
     function fetchPosts() {
         $.ajax({
             type: 'GET',
-            url: 'http://localhost/skincare/backend/get_all_posts',
+            url: 'https://phpbackend-ec7827cfac3d.herokuapp.com/get_all_posts',
             success: function (response) {
                 displayPosts(response);
             },

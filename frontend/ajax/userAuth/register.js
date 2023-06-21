@@ -24,7 +24,7 @@ $(document).ready(function () {
 
         // Send an AJAX POST request
         $.ajax({
-            url: "http://localhost/skincare/backend/register",
+            url: "https://phpbackend-ec7827cfac3d.herokuapp.com/register",
             type: "POST",
             data: user,
             success: function (response) {

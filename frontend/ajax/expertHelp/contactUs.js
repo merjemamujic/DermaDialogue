@@ -10,7 +10,7 @@ var ContactFormModule = (function () {
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost/skincare/backend/support_request',
+            url: 'https://phpbackend-ec7827cfac3d.herokuapp.com/support_request',
             data: formData,
             success: function (response) {
                 handleSuccessResponse(response);
